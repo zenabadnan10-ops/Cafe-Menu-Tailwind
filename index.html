@@ -1,13 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cafe-tailwind</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember &amp; Bean</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <a href="#">Ember &amp; Bean</a>
+    <nav>
+      <a href="#">Menu</a>
+      <a href="#">Offer</a>
+      <a href="#">About</a>
+      <a href="#">Reviews</a>
+      <a href="#">Reserve</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Slow mornings, strong coffee.</h1>
+      <p>Single-origin espresso and warm pastries baked before sunrise. Open daily, 7am to 6pm.</p>
+      <a href="#">See the menu</a>
+      <a href="#">Reserve a table</a>
+    </section>
+    <section>
+      <h2>Menu</h2>
+      <menu></menu>
+      <div></div>
+    </section>
+    <aside>
+      <figure></figure>
+      <div>
+        <h2>Breakfast set</h2>
+        <p>Any hot drink with a croissant or cardamom bun, served until 11am every weekday.</p>
+        <strong>$7.50</strong>
+      </div>
+    </aside>
+    <section>
+      <h2>Our story</h2>
+      <p>Ember &amp; Bean started as a cart and a grinder on the corner of Maple Street. Today we roast in small batches, bake every morning, and still know most of our regulars by name.</p>
+      <ul>
+        <li><strong>9</strong><span>years open</span></li>
+        <li><strong>120k</strong><span>cups poured</span></li>
+        <li><strong>4.9</strong><span>average rating</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>What guests say</h2>
+      <div></div>
+    </section>
+    <section>
+      <form>
+        <h2>Reserve a table</h2>
+        <fieldset>
+          <label>Name <input type="text" placeholder="Your name" required></label>
+          <label>Email <input type="email" placeholder="you@email.com" required></label>
+          <label>Date <input type="date" required></label>
+          <label>Guests
+            <select>
+              <option>1</option><option selected>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </label>
+        </fieldset>
+        <button type="submit">Request booking</button>
+        <output></output>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div><h4>Ember &amp; Bean</h4><p>Small-batch coffee and fresh bakes.</p></div>
+      <div><h4>Hours</h4><p>Mon to Fri: 7am to 6pm</p><p>Sat and Sun: 8am to 5pm</p></div>
+      <div><h4>Find us</h4><p>14 Maple Street</p><p>Your City</p></div>
+      <div><h4>Contact</h4><p>hello@emberandbean.com</p><p>+1 555 010 0199</p></div>
+    </div>
+    <p>&copy; 2026 Ember &amp; Bean. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
