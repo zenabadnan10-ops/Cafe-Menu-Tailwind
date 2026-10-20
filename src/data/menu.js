@@ -36,7 +36,7 @@ export const menuItems = [
         name: "Almond Croissant",
         description: "Buttery, flaky, filled with frangipane.",
         price: 4.50,
-        category: "Pastry",
+        category: "Pastries",
         image: "/almond-croissant.webp"
     },
     {
@@ -44,7 +44,7 @@ export const menuItems = [
         name: "Cardamom Bun",
         description: "Swedish-style bun, pearl sugar on top.",
         price: 4.00,
-        category: "Pastry",
+        category: "Pastries",
         image: "/cardamom-buns.webp"
     },
     {
@@ -52,7 +52,7 @@ export const menuItems = [
         name: "Tiramisu",
         description: "Espresso-soaked sponge, mascarpone cream.",
         price: 6.00,
-        category: "Dessert",
+        category: "Desserts",
         image: "/tiramisu.webp"
     },
     {
@@ -60,7 +60,7 @@ export const menuItems = [
         name: "Lemon Tart",
         description: "Crisp shell, tangy curd, whipped cream.",
         price: 4.50,
-        category: "Dessert",
+        category: "Desserts",
         image: "/lemon-tart.webp"
     },
 ];

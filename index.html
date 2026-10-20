@@ -10,11 +10,11 @@
   <header class="flex items-center justify-between py-4 px-16 bg-[#FBF7F0]">
     <a class="text-[#3B2A20] font-bold text-lg" href="#">Ember &amp; Bean</a>
     <nav class="flex items-center justify-between gap-6">
-      <a class="text-[#2A1D16] text-base" href="#menu">Menu</a>
-      <a class="text-[#2A1D16] text-base" href="#offer">Offer</a>
-      <a class="text-[#2A1D16] text-base" href="#about">About</a>
-      <a class="text-[#2A1D16] text-base" href="#reviews">Reviews</a>
-      <a class="text-[#2A1D16] text-base" href="#reserve">Reserve</a>
+      <a class="text-[#2A1D16] text-base cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition" href="#menu">Menu</a>
+      <a class="text-[#2A1D16] text-base cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition" href="#offer">Offer</a>
+      <a class="text-[#2A1D16] text-base cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition" href="#about">About</a>
+      <a class="text-[#2A1D16] text-base cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition" href="#reviews">Reviews</a>
+      <a class="text-[#2A1D16] text-base cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition" href="#reserve">Reserve</a>
     </nav>
   </header>
   <main>
@@ -22,18 +22,33 @@
       <h1 class="text-[#F6EFE4] font-bold text-5xl">Slow mornings,<br> strong coffee.</h1>
       <p class="text-[#E4D5C3] text-base">Single-origin espresso and warm pastries baked<br> before sunrise. Open daily, 7am to 6pm.</p>
       <div class="flex flex-row gap-3">
-        <a class="text-[#F6EFE4] bg-[#C8832B] font-bold rounded-full px-5 py-2" href="#">See the menu</a>
-        <a class="text-[#F6EFE4] font-bold rounded-full px-5 py-2 border border-white" href="#">Reserve a table</a>
+        <a class="cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition text-[#F6EFE4] bg-[#C8832B] font-bold rounded-full px-5 py-2" href="#menu">See the menu</a>
+        <a class="cursor-pointer active:translate-y-0.5 hover:font-bold hover:-translate-y-0.5 transition text-[#F6EFE4] font-bold rounded-full px-5 py-2 border border-white" href="#reserve">Reserve a table</a>
       </div>
     </section>
     <section id="menu" class="py-10 px-20 flex flex-col gap-5">
       <h2 class="text-[#3B2A20] font-bold text-2xl">Menu</h2>
       <div class="flex flex-row gap-2">
-        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full">All</button>
-        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full">Coffee</button>
-        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full">Tea</button>
-        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full">Pastries</button>
-        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full">Desserts</button>
+        <button class="cursor-pointer transition
+          aria-pressed:bg-[#3B2A20] aria-pressed:text-[#F6EFE4]
+          aria-[pressed=false]:hover:bg-[#E9DFCF]
+          active:scale-95 text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full">All</button>
+        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full cursor-pointer transition
+          aria-pressed:bg-[#3B2A20] aria-pressed:text-[#F6EFE4]
+          aria-[pressed=false]:hover:bg-[#E9DFCF]
+          active:scale-95">Coffee</button>
+        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full cursor-pointer transition
+          aria-pressed:bg-[#3B2A20] aria-pressed:text-[#F6EFE4]
+          aria-[pressed=false]:hover:bg-[#E9DFCF]
+          active:scale-95">Tea</button>
+        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full cursor-pointer transition
+          aria-pressed:bg-[#3B2A20] aria-pressed:text-[#F6EFE4]
+          aria-[pressed=false]:hover:bg-[#E9DFCF]
+          active:scale-95">Pastries</button>
+        <button class="text-[#3B2A20] text-sm border border-[#3B2A20] py-1 px-4 rounded-full cursor-pointer transition
+          aria-pressed:bg-[#3B2A20] aria-pressed:text-[#F6EFE4]
+          aria-[pressed=false]:hover:bg-[#E9DFCF]
+          active:scale-95">Desserts</button>
       </div>
       <div id="menu-div" class="grid grid-cols-4 gap-4"></div>
     </section>
