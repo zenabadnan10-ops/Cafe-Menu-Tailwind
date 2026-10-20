@@ -1,7 +1,8 @@
 import "./style.css";
 
-document.querySelector("#app").innerHTML = `
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-`;
+import { menuItems } from "./data/menu.js";
+import { renderMenuCards } from "./components/menu-card.js";
+
+const menu = document.getElementById("menu-div");
+
+menu.innerHTML = menuItems.map((item) => renderMenuCards(item)).join("");
